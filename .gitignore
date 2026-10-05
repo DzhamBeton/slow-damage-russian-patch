@@ -1,0 +1,10 @@
+dist/
+**/translations/
+**/__pycache__/
+*.pyc
+*.npk
+*.sdpatch
+*.zip
+*.exe
+operation.log
+.venv/

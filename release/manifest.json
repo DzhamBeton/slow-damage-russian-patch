@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "target": "patch/_base2.npk",
+      "hash": "f4a7320a328c2d974f216a6073acc97d41ee9b9e66b035dd45937d56113f27cd",
+      "variants": [
+        {
+          "name": "base2-fan.sdpatch",
+          "source": "e0c983938f4db43df8835d1705e89625834d94973ebe74d6e904b3031a8c209f",
+          "hash": "2516d8baa61435fccb167caec7283e54adffeec0f2ea2bc6fc93132103de46e0"
+        },
+        {
+          "name": "base2-test.sdpatch",
+          "source": "07b0e12c72e2b54f28d9609cb730c43dd3f05cdc2c69500946adca6e3d42f130",
+          "hash": "64b392b17a41cf0169de27454593bcb76df32b372d60fcb641401d3b313f9617"
+        }
+      ]
+    },
+    {
+      "target": "system.npk",
+      "hash": "32197853faa454ab205447393f6fe019193a7e2aa037e9a528aa192605fd36d4",
+      "variants": [
+        {
+          "name": "system-original.sdpatch",
+          "source": "1999eda4eb2e63f1d624afa1126344c3cbb3b79fb0d9717caef716a66779ac2f",
+          "hash": "175a7cff7850d3690b24e1a922dc2f908ceeb12d4cb7dfad522a7aa2e190597a"
+        },
+        {
+          "name": "system-fan.sdpatch",
+          "source": "8c84b94b26c35ec6d27ef29f970eac6d3f5287764b5d1e9b355e1d69dd7efec5",
+          "hash": "2c91990cf14bcfde5f94c28632536f22da9810684d1c1b300e16dac5d6d9f986"
+        },
+        {
+          "name": "system-test.sdpatch",
+          "source": "bc647255c57aa6e3120e189c0ff695f6c3412d6fc2f8f73daa8803f830626aef",
+          "hash": "15dca1854e1ec7192e913933294698a8cb7d71cdd25ecc73bdc1f0ade91bb0c2"
+        }
+      ]
+    },
+    {
+      "target": "patch/_ru_startup.npk",
+      "hash": "a3cb1e4c840550ea26e9691c8aca47257eaaf8da9401b04fd06670351e87cc5f",
+      "complete": "startup.npk"
+    }
+  ]
+}
