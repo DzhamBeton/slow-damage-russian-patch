@@ -1,13 +1,13 @@
-param([string]$ReleaseDirectory)
+﻿param([string]$ReleaseDirectory)
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
-if (-not $ReleaseDirectory) { $ReleaseDirectory = Join-Path $projectRoot 'dist/SlowDamage-Rus-v0.1.0' }
+if (-not $ReleaseDirectory) { $ReleaseDirectory = Join-Path $projectRoot 'dist/SlowDamage-Rus-v0.2.0' }
 $ReleaseDirectory = [IO.Path]::GetFullPath($ReleaseDirectory)
 $compiler = Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
 if (-not (Test-Path -LiteralPath $compiler)) { throw 'The .NET Framework C# compiler was not found.' }
 if (-not (Test-Path -LiteralPath (Join-Path $ReleaseDirectory 'payload')) -or
     -not (Test-Path -LiteralPath (Join-Path $ReleaseDirectory 'manifest.json'))) {
-    throw 'Extract SlowDamage-Rus-v0.1.0.zip into dist/SlowDamage-Rus-v0.1.0 first, or pass -ReleaseDirectory.'
+    throw 'Extract SlowDamage-Rus-v0.2.0.zip into dist/SlowDamage-Rus-v0.2.0 first, or pass -ReleaseDirectory.'
 }
 $executable = Join-Path $ReleaseDirectory 'SlowDamage-Rus-Patcher.exe'
 & $compiler /nologo /target:winexe /reference:System.Drawing.dll /reference:System.Windows.Forms.dll /codepage:65001 "/out:$executable" (Join-Path $projectRoot 'installer/Program.cs')

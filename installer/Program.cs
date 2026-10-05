@@ -5,14 +5,14 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-[assembly: System.Reflection.AssemblyVersion("0.1.0.0")]
+[assembly: System.Reflection.AssemblyVersion("0.2.0.0")]
 namespace SlowDamageRussian {
 class MainForm:Form {
     TextBox folder=new TextBox(),log=new TextBox();Button browse=new Button(),install=new Button(),remove=new Button();
     public MainForm(){
-        Text="Slow Damage — русский перевод v0.1.0";ClientSize=new Size(690,440);MinimumSize=Size;StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);
+        Text="Slow Damage — русский перевод v0.2.0";ClientSize=new Size(690,440);MinimumSize=Size;StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);
         Controls.Add(new Label{Text="SLOW DAMAGE / русский перевод",Location=new Point(22,20),AutoSize=true,Font=new Font("Segoe UI",18,FontStyle.Bold)});
-        Controls.Add(new Label{Text="JAST USA 1.10 + английский Slow Damage Fan Patch",Location=new Point(24,65),AutoSize=true});
+        Controls.Add(new Label{Text="JAST USA 1.10 — установка сразу на чистую игру",Location=new Point(24,65),AutoSize=true});
         Controls.Add(new Label{Text="Выберите папку, в которой находится slow_damage_en.exe",Location=new Point(24,97),AutoSize=true});
         folder.SetBounds(24,128,540,30);browse.SetBounds(574,127,90,32);browse.Text="Обзор…";
         install.SetBounds(24,180,145,36);install.Text="Установить";remove.SetBounds(184,180,210,36);remove.Text="Удалить русификатор";

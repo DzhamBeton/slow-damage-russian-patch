@@ -1,47 +1,62 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "standalone": true,
+  "requirements": [
+    {
+      "target": "script.npk",
+      "hash": "c6a241d5a213ffaae6be3a3f774620efd64cb56f2ab430950f1735f434b6c8cf"
+    },
+    {
+      "target": "font.npk",
+      "hash": "a4d9956bd147109f46425ba3e8dc8b804a414780718ecb504b031bf97a00622d"
+    }
+  ],
   "files": [
     {
       "target": "patch/_base2.npk",
-      "hash": "f4a7320a328c2d974f216a6073acc97d41ee9b9e66b035dd45937d56113f27cd",
-      "variants": [
-        {
-          "name": "base2-fan.sdpatch",
-          "source": "e0c983938f4db43df8835d1705e89625834d94973ebe74d6e904b3031a8c209f",
-          "hash": "2516d8baa61435fccb167caec7283e54adffeec0f2ea2bc6fc93132103de46e0"
-        },
-        {
-          "name": "base2-test.sdpatch",
-          "source": "07b0e12c72e2b54f28d9609cb730c43dd3f05cdc2c69500946adca6e3d42f130",
-          "hash": "64b392b17a41cf0169de27454593bcb76df32b372d60fcb641401d3b313f9617"
-        }
+      "hash": "9a61979ff3d7f6941a47f3d046e536e4ee5c0a622dba2e8de965c72ae48f17bc",
+      "complete": "russian.npk",
+      "sources": [
+        "e0c983938f4db43df8835d1705e89625834d94973ebe74d6e904b3031a8c209f",
+        "07b0e12c72e2b54f28d9609cb730c43dd3f05cdc2c69500946adca6e3d42f130",
+        "f4a7320a328c2d974f216a6073acc97d41ee9b9e66b035dd45937d56113f27cd",
+        "9a61979ff3d7f6941a47f3d046e536e4ee5c0a622dba2e8de965c72ae48f17bc"
       ]
     },
     {
       "target": "system.npk",
-      "hash": "32197853faa454ab205447393f6fe019193a7e2aa037e9a528aa192605fd36d4",
+      "hash": "c882088b127d085ce5bc2cfa0fb810d602586e15c6939cd0393466b74d21ff0e",
       "variants": [
         {
           "name": "system-original.sdpatch",
           "source": "1999eda4eb2e63f1d624afa1126344c3cbb3b79fb0d9717caef716a66779ac2f",
-          "hash": "175a7cff7850d3690b24e1a922dc2f908ceeb12d4cb7dfad522a7aa2e190597a"
+          "hash": "7b30433aae3dd5d73eb57ea37151af56d060a1c8795f013d234cc09201e74471"
         },
         {
           "name": "system-fan.sdpatch",
           "source": "8c84b94b26c35ec6d27ef29f970eac6d3f5287764b5d1e9b355e1d69dd7efec5",
-          "hash": "2c91990cf14bcfde5f94c28632536f22da9810684d1c1b300e16dac5d6d9f986"
+          "hash": "4039efa5330d844d45deaa08d6ea4d362e34c1ec0f56055b0e9826604453a064"
         },
         {
           "name": "system-test.sdpatch",
           "source": "bc647255c57aa6e3120e189c0ff695f6c3412d6fc2f8f73daa8803f830626aef",
-          "hash": "15dca1854e1ec7192e913933294698a8cb7d71cdd25ecc73bdc1f0ade91bb0c2"
+          "hash": "a013980e10321c7820fec7909761be40b8cced89c1b0ac25226a2853a601cdd5"
+        },
+        {
+          "name": "system-v01.sdpatch",
+          "source": "32197853faa454ab205447393f6fe019193a7e2aa037e9a528aa192605fd36d4",
+          "hash": "cfc89121c188e17dbb84575766670f74fb4e8c9e8189aac9fe667caf4a800108"
         }
       ]
     },
     {
       "target": "patch/_ru_startup.npk",
-      "hash": "a3cb1e4c840550ea26e9691c8aca47257eaaf8da9401b04fd06670351e87cc5f",
-      "complete": "startup.npk"
+      "hash": "180feb245c3d60d77e3cf4a1d144d9efe51287c046bd566011b0d55b49e8b291",
+      "complete": "startup.npk",
+      "sources": [
+        "a3cb1e4c840550ea26e9691c8aca47257eaaf8da9401b04fd06670351e87cc5f",
+        "180feb245c3d60d77e3cf4a1d144d9efe51287c046bd566011b0d55b49e8b291"
+      ]
     }
   ]
 }
